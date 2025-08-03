@@ -2,7 +2,7 @@
 
 A scalable, distributed task processing system built with **Hono.js**, **Cloudflare Workers**, **Cloudflare Queues**, and a local Node.js consumer. This project demonstrates how to build a robust queue-based architecture for handling asynchronous task processing.
 
-For the setup guide and project structure see: ![SETUP.md](./SETUP.md)
+For the setup guide and project structure see: [SETUP.md](./SETUP.md)
 
 ## 🚀 Introduction
 
