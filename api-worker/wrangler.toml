@@ -1,0 +1,15 @@
+name = "task-api-v2"
+main = "src/index.ts"
+compatibility_date = "2024-06-01"
+account_id = "dc017dcdd9fb9332bc54a481820b8e26"
+
+# KV Storage for task status
+[[kv_namespaces]]
+binding = "TASK_STORAGE"
+id = "a165a6a96a4540cd867f4e9736ce289c"
+preview_id = "70b1e59dba3f470eb516b3df43b60dd1"
+
+# Queue configuration - PRODUCER ONLY
+[[queues.producers]]
+binding = "TASK_QUEUE_V2"
+queue = "task-queue-v2"

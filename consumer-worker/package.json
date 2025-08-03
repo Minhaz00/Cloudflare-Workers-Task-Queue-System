@@ -1,0 +1,16 @@
+{
+  "name": "consumer-worker-v2",
+  "version": "1.0.0",
+  "description": "Queue buffer worker v2",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "typescript": "^5.1.6",
+    "wrangler": "^3.60.3"
+  }
+}

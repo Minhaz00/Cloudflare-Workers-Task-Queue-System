@@ -1,0 +1,22 @@
+name = "task-queue-api"
+main = "src/index.ts"
+compatibility_date = "2024-06-01"
+
+[env.production]
+name = "task-queue-api"
+
+# KV Storage for task status
+[[kv_namespaces]]
+binding = "TASK_STORE"
+id = "5eea1c231b7c46fa8568f3d61898d4cb"
+preview_id = "YOUR_PREVIEW_KV_NAMESPACE_ID"
+
+# Queue configuration
+[[queues.producers]]
+binding = "TASK_QUEUE"
+queue = "task-processing-queue"
+
+[[queues.consumers]]
+queue = "task-processing-queue"
+max_batch_size = 10
+max_batch_timeout = 30

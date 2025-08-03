@@ -1,0 +1,17 @@
+name = "queue-buffer-v2"
+main = "src/index.ts"
+compatibility_date = "2024-06-01"
+account_id = "dc017dcdd9fb9332bc54a481820b8e26"
+
+# KV for task buffering
+[[kv_namespaces]]
+binding = "TASK_BUFFER"
+id = "6f71ee874f9d4d618cf47102dafd5be7"
+preview_id = "4ba7867b52824e40bbc378ea2a3a63ba"
+
+# Queue consumer configuration
+[[queues.consumers]]
+queue = "task-queue-v2"
+max_batch_size = 10
+max_batch_timeout = 30
+max_retries = 3
